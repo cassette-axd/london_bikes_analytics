@@ -37,12 +37,6 @@ This dashboard empowers coaches, analysts, journalists, and Olympic committees t
 
 - Python: Data preprocessing and automation
 
-- SQL: Structured data transformation and querying
-
-- Azure: Build data pipelines, extracting raw data from data sources
-
-- Data Lake Gen 2: Used as storage for raw and transformed data
-
 - Tableau: Interactive dashboard and report creation
 
 ## Features
