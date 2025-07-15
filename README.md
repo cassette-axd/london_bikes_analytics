@@ -1,36 +1,31 @@
 # London Bikes Dashboard
 
 ## Objective
-To support data-driven storytelling, athlete development, and performance analysis by identifying trends and standout achievements from the 2021 Tokyo Olympics. 
-This project uses key performance indicators like medal counts, country representation, gender distribution, and sport categories to extract meaningful insights from the Games.
+To analyze and visualize bike-sharing usage patterns in London using key metrics such as rental volume, weather conditions, seasonal variation, and user behavior. This dashboard aims to support city planners, environmental researchers, and transportation analysts in making data-driven decisions regarding public bike infrastructure and usage trends.
 
 ## Challenges
-Working with the official Olympic dataset involved several data-related hurdles:
+Working with the London bike-sharing dataset involved several data preparation and analysis challenges:
 
-- Non-standardized formatting of athlete names, disciplines, and event names.
+- Time-based formatting inconsistencies and conversions (e.g., hourly timestamps).
 
-- Multiple entries per athlete (e.g., for team events or multiple medals).
+- Missing or anomalous values in weather and humidity data.
 
-- Medal duplication and aggregation issues for events with shared medals (e.g., team events).
+- Normalizing temperature and windspeed values for meaningful comparisons.
 
-- Data completeness—some fields like age or height were missing or not included in the dataset.
-
-- Difficulty comparing across disciplines, since events vary greatly in structure and scoring.
+- Identifying trends despite cyclical patterns and external variables like holidays or weather events.
 
 ## Solution
-Built an interactive data dashboard and backend workflow that integrates CSV data, Python (Pandas) for preprocessing, SQL for structured querying, and Tableau for visual presentation. This tool provides:
+Developed an interactive dashboard by preprocessing the dataset using Python (Pandas), performing exploratory analysis, and visualizing insights with Tableau. The dashboard enables users to:
 
-- Top athletes by total medal count, including filters by sport and gender
+- View total rentals by time, day, and season
 
-- Country-wise medal distribution, including comparisons by population or team size
+- Analyze correlations between weather conditions and rental behavior
 
-- Most competitive sports based on number of participants and medal spread
+- Compare weekday vs weekend usage patterns
 
-- Gender distribution across sports and events
+- Identify peak rental hours and environmental factors affecting ridership
 
-- Summary dashboards for stakeholders to explore participation trends and medal efficiency
-
-This dashboard empowers coaches, analysts, journalists, and Olympic committees to gain fast, intuitive insights from a historically rich and complex dataset.
+- This dashboard empowers coaches, analysts, journalists, and Olympic committees to gain fast, intuitive insights from a historically rich and complex dataset.
 
 ## Tools and Technologies
 - Excel: Initial data collection and cleaning
@@ -40,10 +35,10 @@ This dashboard empowers coaches, analysts, journalists, and Olympic committees t
 - Tableau: Interactive dashboard and report creation
 
 ## Features
-- Clean and intuitive visual interface
+- Clean and user-friendly interface
 
-- Filtering by metric (medal count, sport, gender, participant count, etc.)
+- Filters for season, weather, and hour of the day
 
-- Ability to compare athletes, countries, and events across performance metrics
+- Dynamic charts showing time-series trends and environmental impacts
 
-- Real-time updating capability (when connected to refreshed datasets)
+- Visual storytelling of bike usage across London over time
